@@ -1,6 +1,6 @@
 import { Item, Label, Numbers } from './Stats.styled';
 
-export const StatElem = ({ stats, children }) => {
+export const ListItem = ({ stats, children }) => {
   return (
     <Item>
       <Label>{children}</Label>

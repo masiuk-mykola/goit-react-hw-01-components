@@ -1,12 +1,12 @@
-import { StatElem } from '../Stats/Stats';
+import { ListItem } from './ListItem/Stats';
 import { List } from './StatsList.styled';
 
 export const StatsList = ({ followers, views, likes }) => {
   return (
     <List>
-      <StatElem stats={followers}>Followers</StatElem>
-      <StatElem stats={views}>Views</StatElem>
-      <StatElem stats={likes}>Likes</StatElem>
+      <ListItem stats={followers}>Followers</ListItem>
+      <ListItem stats={views}>Views</ListItem>
+      <ListItem stats={likes}>Likes</ListItem>
     </List>
   );
 };

@@ -7,6 +7,7 @@ import {
   border,
   shadow,
   space,
+  position,
 } from 'styled-system';
 
 export const Box = styled.div`
@@ -17,4 +18,5 @@ export const Box = styled.div`
   ${border};
   ${shadow};
   ${space};
+  ${position};
 `;
