@@ -1,5 +1,6 @@
+import { Box } from 'components/Box';
 import { MainInfo } from './MainInfo/MainInfo';
-import { StatElem } from './Stats/Stats';
+import { StatsList } from './StatsList/StatsList';
 
 export const Profile = ({
   username,
@@ -9,30 +10,14 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <div>
+    <Box boxShadow="10px 10px 5px 0px rgba(0,0,0,0.55)" width="300px">
       <MainInfo
         username={username}
         tag={tag}
         location={location}
         avatar={avatar}
       />
-      <StatElem stats={followers} />
-      <StatElem stats={views} />
-      <StatElem stats={likes} />
-      {/* <ul>
-        <li>
-          <span>Followers</span>
-          <span>{followers}</span>
-        </li>
-        <li>
-          <span>Views</span>
-          <span>{views}</span>
-        </li>
-        <li>
-          <span>Likes</span>
-          <span>{likes}</span>
-        </li>
-      </ul> */}
-    </div>
+      <StatsList followers={followers} views={views} likes={likes} />
+    </Box>
   );
 };

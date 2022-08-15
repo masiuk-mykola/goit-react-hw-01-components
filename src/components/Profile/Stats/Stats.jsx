@@ -1,9 +1,10 @@
-export const StatElem = ({ stats }) => {
-  console.log(stats);
+import { Item, Label, Numbers } from './Stats.styled';
+
+export const StatElem = ({ stats, children }) => {
   return (
-    <li>
-      <span></span>
-      <span>{stats}</span>
-    </li>
+    <Item>
+      <Label>{children}</Label>
+      <Numbers>{stats}</Numbers>
+    </Item>
   );
 };

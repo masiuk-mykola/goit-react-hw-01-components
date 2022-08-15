@@ -2,7 +2,7 @@ export const theme = {
   colors: {
     background: '#E7ECF2',
     textMain: '#223042',
-    textSecondary: '#DBDFE4',
+    textSecondary: '#a9aaac',
     secondary: '#F3F6F9',
   },
   fonts: {
@@ -20,5 +20,9 @@ export const theme = {
   lineHeights: {
     body: 1.5,
     heading: 1.125,
+  },
+  borders: {
+    none: 'none',
+    normal: '1px solid',
   },
 };
