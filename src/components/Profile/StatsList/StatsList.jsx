@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { ListItem } from './ListItem/Stats';
 import { List } from './StatsList.styled';
 
@@ -9,4 +10,10 @@ export const StatsList = ({ followers, views, likes }) => {
       <ListItem stats={likes}>Likes</ListItem>
     </List>
   );
+};
+
+StatsList.propTypes = {
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
 };
