@@ -20,5 +20,5 @@ export const Marker = styled.span`
   height: 20px;
   border-radius: 50%;
   margin-right: ${props => props.theme.space[4]};
-  background-color: ${props => (props.isOnline === true ? 'green' : 'red')};
+  background-color: ${props => (props.isOnline ? 'green' : 'red')};
 `;

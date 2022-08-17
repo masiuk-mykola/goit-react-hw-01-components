@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { StatisticsItem } from './StatisticsItem/StatisticsItem';
 import { List } from './StatisticsList.styled';
 
@@ -9,4 +10,13 @@ export const StatisticsList = ({ stats }) => {
       })}
     </List>
   );
+};
+
+StatisticsList.protoTypes = {
+  stats: PropTypes.arrayOf(
+    PropTypes.exact({
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
