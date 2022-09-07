@@ -14,13 +14,13 @@ export const Statistics = ({ title, stats }) => {
     >
       {title && <Heading title="Upload stats" />}
 
-      <StatisticsList stats={stats}></StatisticsList>
+      <StatisticsList stats={stats} />
     </Box>
   );
 };
 
 Statistics.protoTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.exact({
       label: PropTypes.string.isRequired,
